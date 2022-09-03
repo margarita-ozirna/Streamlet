@@ -20,7 +20,10 @@ jobs:
 
       - name: Install NodeJS
         uses: actions/setup-node@v2
- 
+        
+      - name: Install Dependencies
+        run: |
+          npm install
 
       - name: Install JDK
         uses: actions/setup-java@v3
